@@ -1,4 +1,4 @@
-.\objects\delay.o: ..\..\..\libraries\user_libraries\src\delay.c
+.\objects\delay.o: ..\..\..\user_libraries\src\delay.c
 .\objects\delay.o: ..\..\..\user_libraries\inc\delay.h
 .\objects\delay.o: ..\..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h
 .\objects\delay.o: ..\..\..\libraries\cmsis\cm4\core_support\core_cm4.h

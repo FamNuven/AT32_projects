@@ -1,0 +1,1 @@
+AT32F403A_407_firmware_BSP&Pack_user_guide_EN_V2.0.7   - описание библитеки от производителя

@@ -96,9 +96,9 @@ int main(void)
   while(1)
   {
 		gpio_bits_set(GPIOC, GPIO_PINS_13);
-		delay_ms(250);
+		delay_ms(500);
 		gpio_bits_reset(GPIOC, GPIO_PINS_13);
-		delay_ms(250);
+		delay_ms(500);
     /* add user code begin 3 */
 
     /* add user code end 3 */

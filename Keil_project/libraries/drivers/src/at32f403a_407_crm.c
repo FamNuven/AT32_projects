@@ -332,7 +332,6 @@ void crm_periph_sleep_mode_clock_enable(crm_periph_clock_sleepmd_type value, con
   {
     CRM_REG(value) &= ~(CRM_REG_BIT(value));
   }
-
 }
 
 /**
@@ -349,26 +348,26 @@ void crm_periph_sleep_mode_clock_enable(crm_periph_clock_sleepmd_type value, con
   */
 void crm_clock_source_enable(crm_clock_source_type source, confirm_state new_state)
 {
-  switch(source)
-  {
-    case CRM_CLOCK_SOURCE_HICK:
-      CRM->ctrl_bit.hicken = new_state;
-      break;
-    case CRM_CLOCK_SOURCE_HEXT:
-      CRM->ctrl_bit.hexten = new_state;
-      break;
-    case CRM_CLOCK_SOURCE_PLL:
-      CRM->ctrl_bit.pllen = new_state;
-      break;
-    case CRM_CLOCK_SOURCE_LEXT:
-      CRM->bpdc_bit.lexten = new_state;
-      break;
-    case CRM_CLOCK_SOURCE_LICK:
-      CRM->ctrlsts_bit.licken = new_state;
-      break;
-    default:
-      break;
-  }
+	switch(source)
+	{
+		case CRM_CLOCK_SOURCE_HICK:
+			CRM->ctrl_bit.hicken = new_state;
+			break;
+		case CRM_CLOCK_SOURCE_HEXT:
+			CRM->ctrl_bit.hexten = new_state;
+			break;
+		case CRM_CLOCK_SOURCE_PLL:
+			CRM->ctrl_bit.pllen = new_state;
+			break;
+		case CRM_CLOCK_SOURCE_LEXT:
+			CRM->bpdc_bit.lexten = new_state;
+			break;
+		case CRM_CLOCK_SOURCE_LICK:
+			CRM->ctrlsts_bit.licken = new_state;
+			break;
+		default:
+			break;
+	}
 }
 
 /**

@@ -4,9 +4,10 @@
 #define STEP_DELAY_MS                    50
 
 /* delay variable */
-static __IO uint32_t fac_us;
-static __IO uint32_t fac_ms;
+static __IO uint32_t fac_us;                               // number of microseconds
+static __IO uint32_t fac_ms;                               // number of milliseconds
 
+/*----------------------------------------------------------------------------*/
 /**
   * @brief  initialize delay function
   * @param  none
@@ -20,6 +21,7 @@ void delay_init(void)
   fac_ms = fac_us * (1000U);
 }
 
+/*----------------------------------------------------------------------------*/
 /**
   * @brief  inserts a delay time.
   * @param  nus: specifies the delay time length, in microsecond.
@@ -29,17 +31,18 @@ void delay_us(uint32_t nus)
 {
   uint32_t temp = 0;
   SysTick->LOAD = (uint32_t)(nus * fac_us);
-  SysTick->VAL = 0x00;
+  SysTick->VAL = 0x00;                                     // reset the timer value 
   SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk ;
   do
   {
     temp = SysTick->CTRL;
-  }while((temp & 0x01) && !(temp & (1 << 16)));
+  }while((temp & 0x01) && !(temp & (1 << 16)));            // while timer is enable and check don't overflow
 
   SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
   SysTick->VAL = 0x00;
 }
 
+/*----------------------------------------------------------------------------*/
 /**
   * @brief  inserts a delay time.
   * @param  nms: specifies the delay time length, in milliseconds.
@@ -47,6 +50,7 @@ void delay_us(uint32_t nus)
   */
 void delay_ms(uint16_t nms)
 {
+  // this function counts down time intervals of 50 milliseconds
   uint32_t temp = 0;
   while(nms)
   {
@@ -72,6 +76,7 @@ void delay_ms(uint16_t nms)
   }
 }
 
+/*----------------------------------------------------------------------------*/
 /**
   * @brief  inserts a delay time.
   * @param  sec: specifies the delay time, in seconds.

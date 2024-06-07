@@ -455,12 +455,12 @@
             <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\libraries\user_libraries\src\delay.c</FilePath>
+              <FilePath>..\..\..\user_libraries\src\delay.c</FilePath>
             </File>
             <File>
               <FileName>delay.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\..\libraries\user_libraries\inc\delay.h</FilePath>
+              <FilePath>..\..\..\user_libraries\inc\delay.h</FilePath>
             </File>
           </Files>
         </Group>
