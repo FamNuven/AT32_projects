@@ -477,6 +477,16 @@
               <FileType>5</FileType>
               <FilePath>..\..\..\user_libraries\inc\user_gpio.h</FilePath>
             </File>
+            <File>
+              <FileName>user_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\user_libraries\src\user_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>user_timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\user_libraries\inc\user_timer.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

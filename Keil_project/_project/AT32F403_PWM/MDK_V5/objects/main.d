@@ -19,3 +19,5 @@
 .\objects\main.o: ..\..\..\libraries\drivers\inc\at32f403a_407_pwc.h
 .\objects\main.o: ..\..\..\libraries\drivers\inc\at32f403a_407_tmr.h
 .\objects\main.o: ..\..\..\user_libraries\inc\delay.h
+.\objects\main.o: ..\..\..\user_libraries\inc\user_gpio.h
+.\objects\main.o: ..\..\..\user_libraries\inc\user_timer.h

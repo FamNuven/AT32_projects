@@ -30,7 +30,8 @@
 /* private includes ----------------------------------------------------------*/
 /* add user code begin private includes */
 #include "delay.h"
-
+#include "user_gpio.h"
+#include "user_timer.h"
 /* add user code end private includes */
 
 /* private typedef -----------------------------------------------------------*/
@@ -75,7 +76,8 @@ int main(void)
   /* add user code end 1 */
 
   /* system clock config. */
-  wk_system_clock_config();
+
+    wk_system_clock_config();
 
   /* config periph clock. */
   wk_periph_clock_config();
@@ -87,15 +89,15 @@ int main(void)
   wk_nvic_config();
 
   /* init tmr2 function. */
-  wk_tmr2_init();
+//  wk_tmr2_init();
 
   /* init gpio function. */
   wk_gpio_config();
 
   /* add user code begin 2 */
   delay_init();
-	
-//	uint32_t data_test = 0;
+//  init_timer_test();
+  init_pwm_A0(2, 50);
   /* add user code end 2 */
 
   while(1)

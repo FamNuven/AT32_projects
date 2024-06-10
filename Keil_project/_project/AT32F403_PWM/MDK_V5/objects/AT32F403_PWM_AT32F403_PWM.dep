@@ -1,6 +1,6 @@
 Dependencies for Project 'AT32F403_PWM', Target 'AT32F403_PWM': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\src\main.c)(0x66630509)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\src\main.c)(0x6666E156)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\inc\at32f403a_407_wk_config.h)(0x6661C3CD)
 I (..\..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x66598A90)
 I (..\..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x66598A90)
@@ -20,7 +20,9 @@ I (..\..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_tmr.h)(0x66598A91)
 I (..\..\..\user_libraries\inc\delay.h)(0x665DA9F4)
-F (..\src\at32f403a_407_wk_config.c)(0x6661C3CD)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_wk_config.o --omf_browse .\objects\at32f403a_407_wk_config.crf --depend .\objects\at32f403a_407_wk_config.d)
+I (..\..\..\user_libraries\inc\user_gpio.h)(0x6666DE78)
+I (..\..\..\user_libraries\inc\user_timer.h)(0x6666DF60)
+F (..\src\at32f403a_407_wk_config.c)(0x66631589)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_wk_config.o --omf_browse .\objects\at32f403a_407_wk_config.crf --depend .\objects\at32f403a_407_wk_config.d)
 I (..\inc\at32f403a_407_wk_config.h)(0x6661C3CD)
 I (..\..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x66598A90)
 I (..\..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x66598A90)
@@ -223,8 +225,8 @@ I (..\..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_tmr.h)(0x66598A91)
-F (..\..\..\user_libraries\src\user_gpio.c)(0x666304A9)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\user_gpio.o --omf_browse .\objects\user_gpio.crf --depend .\objects\user_gpio.d)
-I (..\..\..\user_libraries\inc\user_gpio.h)(0x666304D1)
+F (..\..\..\user_libraries\src\user_gpio.c)(0x6663066E)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\user_gpio.o --omf_browse .\objects\user_gpio.crf --depend .\objects\user_gpio.d)
+I (..\..\..\user_libraries\inc\user_gpio.h)(0x6666DE78)
 I (..\..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x66598A90)
 I (..\..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x66598A90)
 I (E:\Prog\Keil\ARM\ARMCC\include\stdint.h)(0x602569CE)
@@ -243,4 +245,25 @@ I (..\..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x66598A91)
 I (..\..\..\libraries\drivers\inc\at32f403a_407_tmr.h)(0x66598A91)
 I (..\inc\at32f403a_407_wk_config.h)(0x6661C3CD)
-F (..\..\..\user_libraries\inc\user_gpio.h)(0x666304D1)()
+F (..\..\..\user_libraries\inc\user_gpio.h)(0x6666DE78)()
+F (..\..\..\user_libraries\src\user_timer.c)(0x6666E827)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\libraries\drivers\inc -I ..\..\..\libraries\cmsis\cm4\core_support -I ..\..\..\libraries\cmsis\cm4\device_support -I ..\inc -I ..\..\..\user_libraries\inc-IC:\Users\nchernov\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.4\Device\Include-D__UVISION_VERSION="536" -DAT32F403ACGU7 -DAT32F403ACGU7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\user_timer.o --omf_browse .\objects\user_timer.crf --depend .\objects\user_timer.d)
+I (..\..\..\user_libraries\inc\user_timer.h)(0x6666DF60)
+I (..\..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x66598A90)
+I (..\..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x66598A90)
+I (E:\Prog\Keil\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (..\..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x66598A90)
+I (..\..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x66598A90)
+I (..\..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x66598A90)
+I (..\..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x66598A90)
+I (..\..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x66598A90)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x66598A91)
+I (..\inc\at32f403a_407_conf.h)(0x6661C3CD)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x66598A91)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x66598A91)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x66598A91)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x66598A91)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x66598A91)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x66598A91)
+I (..\..\..\libraries\drivers\inc\at32f403a_407_tmr.h)(0x66598A91)
+I (..\inc\at32f403a_407_wk_config.h)(0x6661C3CD)
+F (..\..\..\user_libraries\inc\user_timer.h)(0x6666DF60)()

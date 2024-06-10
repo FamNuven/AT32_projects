@@ -246,7 +246,7 @@ void wk_tmr2_init(void)
   gpio_init(GPIOA, &gpio_init_struct);
 
   /* configure counter settings */
-  tmr_base_init(TMR2, 9999, 63);
+  tmr_base_init(TMR2, 49999, 63);
   tmr_cnt_dir_set(TMR2, TMR_COUNT_UP);
   tmr_clock_source_div_set(TMR2, TMR_CLOCK_DIV1);
   tmr_period_buffer_enable(TMR2, FALSE);
@@ -264,7 +264,7 @@ void wk_tmr2_init(void)
   tmr_output_struct.oc_idle_state = FALSE;
   tmr_output_struct.occ_idle_state = FALSE;
   tmr_output_channel_config(TMR2, TMR_SELECT_CHANNEL_1, &tmr_output_struct);
-  tmr_channel_value_set(TMR2, TMR_SELECT_CHANNEL_1, 4999);
+  tmr_channel_value_set(TMR2, TMR_SELECT_CHANNEL_1, 24999);
   tmr_output_channel_buffer_enable(TMR2, TMR_SELECT_CHANNEL_1, FALSE);
 
   tmr_output_channel_immediately_set(TMR2, TMR_SELECT_CHANNEL_1, FALSE);
