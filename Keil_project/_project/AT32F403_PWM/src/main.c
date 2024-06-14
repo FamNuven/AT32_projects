@@ -76,8 +76,7 @@ int main(void)
   /* add user code end 1 */
 
   /* system clock config. */
-
-    wk_system_clock_config();
+  wk_system_clock_config();
 
   /* config periph clock. */
   wk_periph_clock_config();
@@ -90,23 +89,22 @@ int main(void)
 
   /* init tmr2 function. */
 //  wk_tmr2_init();
-
   /* init gpio function. */
   wk_gpio_config();
 
   /* add user code begin 2 */
   delay_init();
 //  init_timer_test();
-  init_pwm_A0(2, 50);
+  init_pwm_A0(10, 70);
+  init_timer6_test();
   /* add user code end 2 */
 
   while(1)
   {	
-//    toggle_pin(GPIOC, 13);
       delay_ms(500);
-      write_pin(GPIOC,0x2000,SET);
+/*      write_pin(GPIOC,0x2000,SET);
       delay_ms(500);
-      write_pin(GPIOC,0x2000,RESET);    
+      write_pin(GPIOC,0x2000,RESET);  */  
     /* add user code begin 3 */
 
     /* add user code end 3 */

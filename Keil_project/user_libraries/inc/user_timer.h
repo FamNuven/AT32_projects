@@ -22,3 +22,5 @@
 // TMRx_DMADT   - 
 void init_timer_test (void);
 void init_pwm_A0 (uint32_t freq, uint8_t duty);
+void init_timer2_int (void);
+void init_timer6_int (void);

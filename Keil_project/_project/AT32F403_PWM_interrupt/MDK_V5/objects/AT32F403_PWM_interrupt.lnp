@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\at32f403a_407_wk_config.o"
+".\objects\at32f403a_407_int.o"
+".\objects\at32f403a_407_crm.o"
+".\objects\at32f403a_407_debug.o"
+".\objects\at32f403a_407_flash.o"
+".\objects\at32f403a_407_gpio.o"
+".\objects\at32f403a_407_misc.o"
+".\objects\at32f403a_407_pwc.o"
+".\objects\at32f403a_407_tmr.o"
+".\objects\startup_at32f403a_407.o"
+".\objects\system_at32f403a_407.o"
+".\objects\delay.o"
+".\objects\user_gpio.o"
+".\objects\user_timer.o"
+--strict --scatter ".\objects\AT32F403_PWM_interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\AT32F403_PWM_interrupt.map" -o .\objects\AT32F403_PWM_interrupt.axf

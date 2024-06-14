@@ -1,6 +1,7 @@
 /* This library includes fuctions for work with timer */
 
 #include "user_timer.h"
+#include "user_gpio.h"
 
 uint32_t sys_clock = 0;
 
@@ -42,4 +43,35 @@ void init_pwm_A0 (uint32_t freq, uint8_t duty)
     TMR2->c1dt = duty * 10 - 1;                                
     TMR2->ctrl1_bit.tmren = 1;                             // Timer 2 ENABLE
     TMR2->cctrl_bit.c1en = 1;                              // Channel 1 ENABLE
+}
+
+
+/*----------------------------------------------------------------------------*/
+/**
+ * @brief this fuction initialize TIMER2 channel 1 as PWM with interrupt (overflow)  
+ */
+void init_timer2_int (void)
+{
+    TMR2->iden_bit.c1ien = 1;                              // Channel 1 interrupt enable
+    TMR2->div = 6399;
+    TMR2->pr = 9999;       
+    TMR2->ctrl1_bit.tmren = 1;                             // Timer 2 ENABLE
+    TMR2->cctrl_bit.c1en = 1;                              // Channel 1 ENABLE
+}
+
+
+/*----------------------------------------------------------------------------*/
+/**
+ * @brief this fuction initialize TIMER6's interrupt (overflow)  
+ */
+void init_timer6_int (void)
+{
+    crm_periph_clock_enable(CRM_TMR6_PERIPH_CLOCK, TRUE);
+    nvic_irq_enable(TMR6_GLOBAL_IRQn, 0, 0);
+    TMR6->ctrl1_bit.ovfs = 1;
+    TMR6->div = 6399;
+    TMR6->pr = 9999;
+    TMR6->iden_bit.ovfien = 1;                             // overflow interrupt ON
+    TMR6->ists_bit.ovfif = 1;
+    TMR6->ctrl1_bit.tmren = 1;                             // Timer 6 enable   
 }
