@@ -1,5 +1,4 @@
 #include "at32f403a_407.h"
-#include "at32f403a_407_wk_config.h"
 
 // reference from user (Timer 2 and 5)
 // TMRx_CTRL1   - Control register 1

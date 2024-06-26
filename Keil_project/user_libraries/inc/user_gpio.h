@@ -1,5 +1,4 @@
 #include "at32f403a_407.h"
-#include "at32f403a_407_wk_config.h"
 
 // reference from user
 // GPIOx_CFGLR  -  function configuration 0-7 pins
