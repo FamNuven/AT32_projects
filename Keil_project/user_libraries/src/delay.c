@@ -1,3 +1,16 @@
+/**
+  ******************************************************************************
+  * @file    delay.c	
+  * @brief   
+  * @author  nchernov
+  * @version 1.0
+  * @date    22.07.2024
+  ******************************************************************************
+  * @attention this library contains various delay functions. First you have to call the delay_init function
+  ******************************************************************************
+  */
+
+
 #include "delay.h"
 
 /* delay macros */
